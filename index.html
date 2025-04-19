@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Team Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="quiz-container">
+
+    <!-- Start screen -->
+    <div class="card" id="start-screen">
+      <h2>Welcome to the Team Quiz App!</h2>
+      <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz box -->
+    <div class="card" id="question-box" style="display:none;">
+      <h2 id="question-text"></h2>
+      <ul id="choices-list"></ul>
+    </div>
+    <button id="next-btn" class="btn" style="display:none;">Next</button>
+
+    <!-- Score display -->
+    <div class="card" id="score-box" style="display:none;">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button id="toggle-review-btn" class="btn">Show Review</button>
+    </div>
+
+    <!-- Answer review -->
+    <div class="card" id="review-box" style="display:none;">
+      <h3>Review</h3>
+      <ul id="review-list"></ul>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
