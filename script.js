@@ -4,12 +4,11 @@ let questions = [];
 let userAnswers = [];
 
 $(document).ready(function () {
-  // Load questions from questions.json
   $.getJSON("questions.json", function (data) {
     questions = data;
   });
 
-  // Start quiz
+
   $("#start-btn").click(function () {
     $("#start-screen").fadeOut(() => {
       showQuestion();
@@ -18,7 +17,7 @@ $(document).ready(function () {
     });
   });
 
-  // Next question button
+
   $("#next-btn").click(function () {
     let selected = $("input[name='choice']:checked").val();
     if (!selected) {
@@ -41,41 +40,38 @@ $(document).ready(function () {
       $("#next-btn").hide();
       $("#score").text(`${score} / ${questions.length}`);
       $("#score-box").show();
-      showReview();             // generate review content
-      $("#review-box").hide();  // hide review by default
-      $("#restart-btn").fadeIn(); // Show the Restart button
-      $("#toggle-review-btn").fadeIn(); // Ensure the review button is visible after quiz ends
+      showReview();             
+      $("#review-box").hide();  
+      $("#restart-btn").fadeIn(); 
+      $("#toggle-review-btn").fadeIn(); 
     }
   });
 
-  // Toggle review visibility
+  
   $("#toggle-review-btn").click(function () {
-    $("#review-box").slideToggle(); // slide up/down
-    const isVisible = $("#review-box").is(":visible");
-    $(this).text(isVisible ? "Hide Review" : "Show Review");
+    const isVisible = $("#review-box").is(":visible"); 
+    $("#review-box").slideToggle(); 
+    $(this).text(isVisible ? "SHOW RESULT" : "HIDE RESULT");
   });
 
-  // Restart quiz functionality
+ 
   $("#restart-btn").click(function () {
-    // Reset the quiz state
+
     currentQuestion = 0;
     score = 0;
     userAnswers = [];
     $("#review-box").hide();
     $("#score-box").hide();
 
-    // Show the start screen and hide the restart button
     $("#start-screen").fadeIn();
     $("#restart-btn").hide();
     $("#toggle-review-btn").hide();
 
-    // Hide any quiz-related sections (except the start screen)
     $("#question-box").hide();
     $("#next-btn").hide();
   });
 });
 
-// Function to show the current question
 function showQuestion() {
   let q = questions[currentQuestion];
   $("#question-text").text(q.question);
@@ -93,7 +89,7 @@ function showQuestion() {
   $("#choices-list").html(choicesHtml);
 }
 
-// Function to show the review of answers
+
 function showReview() {
   let reviewHtml = "";
 

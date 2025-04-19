@@ -1,6 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: url('background.png');
+  background-size: cover; 
+  background-position: center center;
+  background-attachment: fixed; 
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -12,11 +15,36 @@ body {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #1b2b66;
   border-radius: 12px;
   padding: 20px 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  color: white;
+}
+
+.scard {
+  background-color: #0e0b47; 
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.welcome-img {
+  width: 400px; 
+  height: auto; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.rcard {
+  background-color: #1b2b66;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: black;
 }
 
 #question-text {
@@ -39,10 +67,12 @@ input[type="radio"] {
 .btn {
   display: block;
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #019869;
   color: white;
   padding: 12px;
+  margin-bottom: 10px;
   font-size: 16px;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -67,4 +97,9 @@ input[type="radio"] {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 8px;
+}
+
+.review-heading {
+  color: white;
+  font-weight: bold;
 }

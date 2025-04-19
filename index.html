@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Quiz App</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icon.png">
+
 </head>
 <body>
   <div id="quiz-container">
 
     <!-- Start screen -->
-    <div class="card" id="start-screen">
-      <h2>Welcome to the Team Quiz App!</h2>
-      <button id="start-btn" class="btn">Start Quiz</button>
+    <div class="scard" id="start-screen">
+      <img src="start_logo.gif" alt="welcome" class="welcome-img" />
+      <button id="start-btn" class="btn"><b>START QUIZ</b></button>
     </div>
 
     <!-- Quiz box -->
@@ -19,18 +22,18 @@
       <h2 id="question-text"></h2>
       <ul id="choices-list"></ul>
     </div>
-    <button id="next-btn" class="btn" style="display:none;">Next</button>
+    <button id="next-btn" class="btn" style="display:none;">NEXT QUESTION</button>
 
     <!-- Score display -->
     <div class="card" id="score-box" style="display:none;">
-      <h2>Your Score: <span id="score"></span></h2>
-      <button id="toggle-review-btn" class="btn">Show Review</button>
-      <button id="restart-btn" class="btn" style="display:none;">Restart Quiz</button>
+      <h2>SCORE :  <span id="score"></span></h2>
+      <button id="toggle-review-btn" class="btn">SHOW RESULT</button>
+      <button id="restart-btn" class="btn" style="display:none;">RESTART QUIZ</button>
     </div>
 
     <!-- Answer review -->
-    <div class="card" id="review-box" style="display:none;">
-      <h3>Review</h3>
+    <div class="rcard" id="review-box" style="display:none;">
+      <h3 class="review-heading">REVIEW YOUR ANSWERS</h3>
       <ul id="review-list"></ul>
     </div>
 
