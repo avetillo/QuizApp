@@ -43,6 +43,8 @@ $(document).ready(function () {
       $("#score-box").show();
       showReview();             // generate review content
       $("#review-box").hide();  // hide review by default
+      $("#restart-btn").fadeIn(); // Show the Restart button
+      $("#toggle-review-btn").fadeIn(); // Ensure the review button is visible after quiz ends
     }
   });
 
@@ -51,6 +53,25 @@ $(document).ready(function () {
     $("#review-box").slideToggle(); // slide up/down
     const isVisible = $("#review-box").is(":visible");
     $(this).text(isVisible ? "Hide Review" : "Show Review");
+  });
+
+  // Restart quiz functionality
+  $("#restart-btn").click(function () {
+    // Reset the quiz state
+    currentQuestion = 0;
+    score = 0;
+    userAnswers = [];
+    $("#review-box").hide();
+    $("#score-box").hide();
+
+    // Show the start screen and hide the restart button
+    $("#start-screen").fadeIn();
+    $("#restart-btn").hide();
+    $("#toggle-review-btn").hide();
+
+    // Hide any quiz-related sections (except the start screen)
+    $("#question-box").hide();
+    $("#next-btn").hide();
   });
 });
 
