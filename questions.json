@@ -1,17 +1,102 @@
 [
   {
-    "question": "What is the capital of France?",
-    "choices": ["Berlin", "London", "Paris", "Rome"],
-    "answer": "Paris"
+    "question": "What is HTML, and what is it used for?",
+    "choices": [
+      "A programming language used to style web pages",
+      "A markup language used to structure content on the web",
+      "A database language for managing data",
+      "A tool for creating animations"
+    ],
+    "answer": "A markup language used to structure content on the web"
   },
   {
-    "question": "Which planet is known as the Red Planet?",
-    "choices": ["Earth", "Venus", "Mars", "Jupiter"],
-    "answer": "Mars"
+    "question": "What is the difference between HTML and CSS?",
+    "choices": [
+      "HTML styles the web page, CSS structures it",
+      "HTML stores data, CSS secures it",
+      "HTML structures content, CSS styles it",
+      "HTML is only for mobile devices"
+    ],
+    "answer": "HTML structures content, CSS styles it"
   },
   {
-    "question": "What is the largest mammal?",
-    "choices": ["Elephant", "Blue Whale", "Giraffe", "Shark"],
-    "answer": "Blue Whale"
+    "question": "Which tag is used to create a hyperlink in HTML?",
+    "choices": [
+      "link",
+      "a",
+      "href",
+      "hlink"
+    ],
+    "answer": "a"
+  },
+  {
+    "question": "Which method is used to attach an external CSS file to an HTML document?",
+    "choices": [
+      "Using a style tag with a src attribute",
+      "Using a css tag with file attribute",
+      "Using a link element with rel and href attributes",
+      "Using a script tag pointing to a CSS file"
+    ],
+    "answer": "Using a link element with rel and href attributes"
+  },
+  {
+    "question": "What are semantic HTML elements?",
+    "choices": [
+      "Elements used just for visual effect like italic and bold",
+      "Elements used for styling like div and span",
+      "Elements that clearly define their content like article and footer",
+      "Elements only used in JavaScript"
+    ],
+    "answer": "Elements that clearly define their content like article and footer"
+  },
+  {
+    "question": "What is the purpose of the head section in an HTML document?",
+    "choices": [
+      "To display visible content in the browser",
+      "To style the visible content",
+      "To store metadata and links to scripts or stylesheets",
+      "To create visible headers on the page"
+    ],
+    "answer": "To store metadata and links to scripts or stylesheets"
+  },
+  {
+    "question": "How do inline, internal, and external CSS differ?",
+    "choices": [
+      "They are different font styles",
+      "They are ways to include CSS: directly in elements, inside a style block, or via a linked file",
+      "They are different types of HTML pages",
+      "They are only used in JavaScript code"
+    ],
+    "answer": "They are ways to include CSS: directly in elements, inside a style block, or via a linked file"
+  },
+  {
+    "question": "What is the role of JavaScript in web development?",
+    "choices": [
+      "It structures the web page content",
+      "It adds interactivity and dynamic behavior",
+      "It uploads files to the server",
+      "It encrypts web pages"
+    ],
+    "answer": "It adds interactivity and dynamic behavior"
+  },
+  {
+    "question": "How do you make a website responsive?",
+    "choices": [
+      "Use tables for layout",
+      "Set widths in pixels",
+      "Use media queries and flexible layouts",
+      "Style everything with JavaScript"
+    ],
+    "answer": "Use media queries and flexible layouts"
+  },
+  {
+    "question": "What is the main purpose of the Bootstrap framework?",
+    "choices": [
+      "Backend database management",
+      "Creating responsive, mobile-first websites",
+      "Building server-side applications",
+      "Compiling Java code"
+    ],
+    "answer": "Creating responsive, mobile-first websites"
   }
 ]

@@ -100,9 +100,10 @@ function showReview() {
 
     reviewHtml += `
       <li class="${resultClass}">
-        <strong>Q${index + 1}:</strong> ${q.question}<br>
-        <span>Your Answer: ${userAnswer}</span><br>
-        <span>Correct Answer: ${q.answer}</span>
+        <strong>Q${index + 1}.</strong> ${q.question}<br>
+        <br>
+        <span><strong>Your Answer:</strong> ${userAnswer}</span><br>
+        <span><strong>Correct Answer:</strong> ${q.answer}</span>
       </li>`;
   });
 
