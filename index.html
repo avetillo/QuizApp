@@ -6,15 +6,15 @@
   <title>GALAXIQ : Beyond the Clouds</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="icon.png">
-
 </head>
 <body>
   <div id="quiz-container">
-
     <!-- Start screen -->
     <div class="scard" id="start-screen">
       <img src="start_logo.gif" alt="welcome" class="welcome-img" />
-      <button id="start-btn" class="btn"><b>START QUIZ</b></button>
+      <button id="start-btn" class="btn">
+        <i class="fas fa-rocket"></i> START QUIZ
+      </button>
     </div>
 
     <!-- Quiz box -->
@@ -22,21 +22,28 @@
       <h2 id="question-text"></h2>
       <ul id="choices-list"></ul>
     </div>
-    <button id="next-btn" class="btn" style="display:none;">NEXT QUESTION</button>
+    <button id="next-btn" class="btn" style="display:none;">
+      <i class="fas fa-arrow-right"></i> NEXT QUESTION
+    </button>
 
     <!-- Score display -->
     <div class="card" id="score-box" style="display:none;">
-      <h2>SCORE :  <span id="score"></span></h2>
-      <button id="toggle-review-btn" class="btn">SHOW RESULT</button>
-      <button id="restart-btn" class="btn" style="display:none;">RESTART QUIZ</button>
+      <h2>FINAL SCORE: <span id="score"></span></h2>
+      <button id="toggle-review-btn" class="btn">
+        <i class="fas fa-list-check"></i> SHOW RESULT
+      </button>
+      <button id="restart-btn" class="btn" style="display:none;">
+        <i class="fas fa-redo"></i> RESTART QUIZ
+      </button>
     </div>
 
     <!-- Answer review -->
     <div class="rcard" id="review-box" style="display:none;">
-      <h3 class="review-heading">REVIEW YOUR ANSWERS</h3>
+      <h3 class="review-heading">
+        <i class="fas fa-clipboard-check"></i> REVIEW YOUR ANSWERS
+      </h3>
       <ul id="review-list"></ul>
     </div>
-
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -98,5 +98,105 @@
       "Compiling Java code"
     ],
     "answer": "Creating responsive, mobile-first websites"
+  },
+  {
+    "question": "What is CSS?",
+    "choices": [
+      "Computer Style System",
+      "Cascading Style Sheets",
+      "Content Structure System",
+      "Code Styling Software"
+    ],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "question": "When was JavaScript first developed?",
+    "choices": [
+      "1990",
+      "1995",
+      "2000",
+      "2005"
+    ],
+    "answer": "1995"
+  },
+  {
+    "question": "What is AJAX used for in web development?",
+    "choices": [
+      "To create 3D animations",
+      "To update web pages asynchronously without reloading",
+      "To compress image files",
+      "To protect websites from hackers"
+    ],
+    "answer": "To update web pages asynchronously without reloading"
+  },
+  {
+    "question": "Who coined the term 'Responsive Web Design'?",
+    "choices": [
+      "Tim Berners-Lee",
+      "Steve Jobs",
+      "Ethan Marcotte",
+      "Mark Zuckerberg"
+    ],
+    "answer": "Ethan Marcotte"
+  },
+  {
+    "question": "What is Node.js?",
+    "choices": [
+      "A JavaScript framework for mobile apps",
+      "A JavaScript runtime for server-side programming",
+      "A CSS preprocessor",
+      "A code editor for web developers"
+    ],
+    "answer": "A JavaScript runtime for server-side programming"
+  },
+  {
+    "question": "Which organization develops Web Standards?",
+    "choices": [
+      "IEEE",
+      "World Wide Web Consortium (W3C)",
+      "Microsoft",
+      "Mozilla"
+    ],
+    "answer": "World Wide Web Consortium (W3C)"
+  },
+  {
+    "question": "What does HTTPS add to HTTP?",
+    "choices": [
+      "Hyperlinks",
+      "Encryption",
+      "Speed",
+      "Images"
+    ],
+    "answer": "Encryption"
+  },
+  {
+    "question": "Which of these is a popular Content Management System (CMS)?",
+    "choices": [
+      "Angular",
+      "React",
+      "WordPress",
+      "Python"
+    ],
+    "answer": "WordPress"
+  },
+  {
+    "question": "What do the Web Content Accessibility Guidelines (WCAG) ensure?",
+    "choices": [
+      "Fast loading websites",
+      "Content is accessible to people with disabilities",
+      "Search engine optimization",
+      "Protection against cyber attacks"
+    ],
+    "answer": "Content is accessible to people with disabilities"
+  },
+  {
+    "question": "What are Progressive Web Apps (PWAs)?",
+    "choices": [
+      "Web applications that provide native app-like experiences",
+      "Apps that require professional developers",
+      "Apps that only work on progressive browsers",
+      "Applications that load progressively from top to bottom"
+    ],
+    "answer": "Web applications that provide native app-like experiences"
   }
 ]
